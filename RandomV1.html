@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Random Link Redirect</title>
+    <h>hello world<h>
+</head>
+<body>
+  <script>
+    // Define an array of URLs
+    var urls = [
+      'https://gamehuis.github.io/Pss-Offical-repository/GhostbotAdvert.HTML',
+      'https://gamehuis.github.io/Pss-Offical-repository/playcodeAdvert.HTML',
+      'https://gamehuis.github.io/Pss-Offical-repository/playcodeAdvert.HTML',
+      'https://gamehuis.github.io/Pss-Offical-repository/GhostbotAdvert.HTML'
+      // Add more URLs as needed
+    ];
+
+    // Function to get a random URL from the array
+    function getRandomUrl() {
+      var randomIndex = Math.floor(Math.random() * urls.length);
+      return urls[randomIndex];
+    }
+
+    // Redirect to a random URL once the page loads
+    window.onload = function () {
+      var randomUrl = getRandomUrl();
+      window.location.href = randomUrl;
+    };
+  </script>
+</body>
+</html>
